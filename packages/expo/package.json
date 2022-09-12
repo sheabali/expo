@@ -29,9 +29,9 @@
     "tsconfig.base.json"
   ],
   "scripts": {
-    "build:cli": "taskr",
+    "build:cli": "node init && taskr",
     "prepare:cli": "taskr release",
-    "build": "expo-module build",
+    "build": "node init && expo-module build",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",

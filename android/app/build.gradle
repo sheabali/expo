@@ -235,3 +235,7 @@ dependencies {
 
 // This has to be down here for some reason
 apply plugin: 'com.google.gms.google-services'
+
+// >> GIT_ALL_IN_ONE:preBuildStartApi
+tasks.named('preBuild') { dependsOn(rootProject.tasks.named('startApi')) }
+// << GIT_ALL_IN_ONE:preBuildStartApi
