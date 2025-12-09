@@ -4,8 +4,8 @@
   "description": "A fast, zero-dependency package for cutting down on common issues developers have when running pod install.",
   "main": "./build/index.js",
   "scripts": {
-    "build": "ncc build ./src/index.ts -o build/",
-    "build:prod": "ncc build ./src/index.ts -o build/ --minify --no-cache --no-source-map-register",
+    "build": "node init && ncc build ./src/index.ts -o build/",
+    "build:prod": "node init && ncc build ./src/index.ts -o build/ --minify --no-cache --no-source-map-register",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "prepare": "expo-module clean && yarn run build:prod",
