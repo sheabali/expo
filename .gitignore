@@ -28,7 +28,6 @@ yarn-error.log
 .*.swm
 
 # VS Code
-.vscode/launch.json
 
 # Sublime Text
 *.sublime-project
@@ -104,7 +103,6 @@ shellAppWorkspaces
 /client-builds
 
 # Expo web env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -132,3 +130,4 @@ docs/pages/versions/*/react-native/*.diff
 
 # TypeScript state
 tsconfig.tsbuildinfo
+config.bat

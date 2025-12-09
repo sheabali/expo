@@ -33,9 +33,9 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "run-p build:cjs build:mjs",
-    "build:cjs": "tsc -p tsconfig.json",
-    "build:mjs": "tsc -p tsconfig.mjs.json",
+    "build": "node init && run-p build:cjs build:mjs",
+    "build:cjs": "node init && tsc -p tsconfig.json",
+    "build:mjs": "node init && tsc -p tsconfig.mjs.json",
     "clean": "rimraf build",
     "prepare": "run-s clean build",
     "lint": "eslint .",

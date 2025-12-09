@@ -25,8 +25,8 @@
     "node": ">=18.13.0"
   },
   "scripts": {
-    "build": "ncc build ./src/index.ts -o build/",
-    "build:prod": "ncc build ./src/index.ts -o build/ --minify --no-cache --no-source-map-register",
+    "build": "node init && ncc build ./src/index.ts -o build/",
+    "build:prod": "node init && ncc build ./src/index.ts -o build/ --minify --no-cache --no-source-map-register",
     "prepare": "expo-module clean && yarn run build:prod",
     "clean": "expo-module clean",
     "lint": "expo-module lint",

@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/expo/expo-test-runner#readme",
   "scripts": {
-    "build": "expo-module build",
+    "build": "node init && expo-module build",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",

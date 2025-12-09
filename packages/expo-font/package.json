@@ -6,11 +6,11 @@
   "types": "build/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "expo-module build",
+    "build": "node init && expo-module build",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",
-    "build:plugin": "expo-module build plugin",
+    "build:plugin": "node init && expo-module build plugin",
     "test:plugin": "expo-module test plugin",
     "test:rsc": "jest --config jest-rsc.config.js",
     "prepare": "expo-module prepare",

@@ -8,8 +8,8 @@
     "./build/DevicePushTokenAutoRegistration.fx.js"
   ],
   "scripts": {
-    "build": "expo-module build",
-    "build:plugin": "expo-module build plugin",
+    "build": "node init && expo-module build",
+    "build:plugin": "node init && expo-module build plugin",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",

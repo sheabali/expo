@@ -5,7 +5,7 @@
   "main": "build/VideoThumbnails.js",
   "types": "build/VideoThumbnails.d.ts",
   "scripts": {
-    "build": "expo-module build",
+    "build": "node init && expo-module build",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",
