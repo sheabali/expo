@@ -70,7 +70,7 @@
   },
   "homepage": "https://docs.expo.dev/routing/introduction/",
   "scripts": {
-    "build": "node ./scripts/build.js",
+    "build": "node init && node ./scripts/build.js",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",
