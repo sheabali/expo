@@ -10,7 +10,7 @@
     "templates"
   ],
   "scripts": {
-    "build": "taskr release",
+    "build": "node init && taskr release",
     "watch": "taskr",
     "clean": "rm -rf build cache",
     "et": "node bin/expotools.js",
