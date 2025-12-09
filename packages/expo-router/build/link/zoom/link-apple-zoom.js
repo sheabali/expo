@@ -46,7 +46,9 @@ function LinkAppleZoomImpl({ children, alignmentRect, ...rest }) {
     if (!canAddSource) {
         return <Slot_1.Slot {...rest}>{children}</Slot_1.Slot>;
     }
-    return (<native_1.LinkZoomTransitionSource identifier={identifier} alignment={alignmentRect}>
+    return (<native_1.LinkZoomTransitionSource identifier={identifier} alignment={alignmentRect} 
+    // Note(@ubax): Even though we always set this to true, I want to keep the prop here for easier future changes.
+    animateAspectRatioChange>
       <Slot_1.Slot {...rest}>{children}</Slot_1.Slot>
     </native_1.LinkZoomTransitionSource>);
 }
