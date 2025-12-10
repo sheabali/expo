@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "yarn generate-static-resources && next dev -p 3002",
-    "build": "yarn copy-latest && yarn generate-llms && next build",
+    "dev": "node init && yarn generate-static-resources && next dev -p 3002",
+    "build": "node init && yarn copy-latest && yarn generate-llms && next build",
     "export": "yarn generate-static-resources production && yarn versions-schema-sync && yarn append-last-modified-dates && yarn run build",
     "export-preview": "yarn generate-static-resources preview && yarn versions-schema-sync && yarn append-last-modified-dates && yarn run build",
     "export-server": "http-server out -p 8000",
