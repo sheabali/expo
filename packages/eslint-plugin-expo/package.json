@@ -21,7 +21,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "dependencies": {
     "@typescript-eslint/types": "^8.29.1",
