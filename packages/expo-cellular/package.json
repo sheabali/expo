@@ -1,11 +1,11 @@
 {
   "name": "expo-cellular",
   "version": "8.0.7",
-  "description": "Provides information about the user’s cellular service provider",
+  "description": "Provides information about the user\u2019s cellular service provider",
   "main": "build/Cellular.js",
   "types": "build/Cellular.d.ts",
   "scripts": {
-    "build": "expo-module build",
+    "build": "node init && expo-module build",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",
